@@ -15,6 +15,6 @@ Responsive Design: The Typing Text Effect is designed to be responsive, ensuring
 Contributions to the Typing Text Effect project are welcome! If you encounter any issues, have suggestions for improvements, or would like to add new features, please feel free to submit a pull request.
 
 <h1>License</h1>
-This project is licensed under the MIT License.
+This project is licensed under the MIT License.<br><br>
 
 <i>Capture your users' attention with the Typing Text Effect and bring your text to life. Create engaging and dynamic animations with ease. If you have any questions or need assistance, don't hesitate to reach out.</i>
