@@ -1,0 +1,569 @@
+@font-face {
+  font-family: "MTNBrighterSans-Regular";
+  src: url("ttf/MTNBrighterSans-Regular.ttf") format("truetype");
+}
+
+* {
+  font-family: "MTNBrighterSans-Regular";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "MTNBrighterSans-Regular";
+  background-color: #000;
+  color: #eee;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+
+    span.typed-text {
+      font-weight: normal;
+      color: #ffee00;
+    }
+
+    span.cursor {
+      display: inline-block;
+      background-color: #ccc;
+      margin-left: 0.1rem;
+      width: 3px;
+      animation: blink 1s infinite;
+    }
+
+    span.cursor.typing {
+      animation: none;
+    }
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+@keyframes particles {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-2560px);
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.space {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+
+.particle,
+.particle::after {
+  background: transparent;
+}
+
+.particle::after {
+  position: absolute;
+  content: "";
+  top: 2560px;
+}
+
+.particle:nth-child(1) {
+  animation: particles 60s linear infinite;
+}
+.particle:nth-child(1),
+.particle:nth-child(1)::after {
+  box-shadow: 0 0 yellow, 1342px 1684px yellow, 2505px 2293px yellow,
+    1873px 347px yellow, 2254px 1148px yellow, 664px 1217px yellow,
+    2124px 454px yellow, 64px 1088px yellow, 1361px 2294px yellow,
+    566px 1490px yellow, 405px 140px yellow, 786px 52px yellow,
+    856px 917px yellow, 942px 2278px yellow, 2549px 129px yellow,
+    913px 839px yellow, 808px 549px yellow, 171px 1717px yellow,
+    1934px 575px yellow, 601px 1577px yellow, 516px 1343px yellow,
+    1353px 2303px yellow, 787px 1996px yellow, 1256px 794px yellow,
+    544px 1644px yellow, 2147px 533px yellow, 1713px 2362px yellow,
+    2182px 1622px yellow, 1557px 689px yellow, 1036px 1736px yellow,
+    354px 2485px yellow, 1480px 135px yellow, 2493px 2179px yellow,
+    461px 517px yellow, 343px 708px yellow, 663px 1851px yellow,
+    189px 763px yellow, 416px 1249px yellow, 2319px 1880px yellow,
+    2024px 2270px yellow, 330px 583px yellow, 617px 637px yellow,
+    310px 2064px yellow, 669px 1185px yellow, 1729px 2133px yellow,
+    765px 162px yellow, 1579px 250px yellow, 142px 2455px yellow,
+    2224px 334px yellow, 1181px 1980px yellow, 402px 1139px yellow,
+    2245px 2163px yellow, 2154px 2269px yellow, 1980px 1569px yellow,
+    184px 1888px yellow, 2357px 1439px yellow, 1426px 575px yellow,
+    485px 1039px yellow, 987px 717px yellow, 2498px 1764px yellow,
+    2286px 73px yellow, 71px 400px yellow, 2330px 837px yellow,
+    2412px 1438px yellow, 256px 1503px yellow, 2517px 2463px yellow,
+    199px 2219px yellow, 951px 1428px yellow, 123px 1469px yellow,
+    1789px 285px yellow, 1995px 2128px yellow, 1609px 1652px yellow,
+    2035px 67px yellow, 1223px 1508px yellow, 1526px 2182px yellow,
+    2502px 1913px yellow, 2553px 253px yellow, 1850px 2503px yellow,
+    101px 2366px yellow, 1642px 2061px yellow, 448px 1968px yellow,
+    1336px 99px yellow, 1077px 446px yellow, 258px 1233px yellow,
+    1474px 430px yellow, 1667px 820px yellow, 1963px 661px yellow,
+    209px 2558px yellow, 722px 1656px yellow, 1260px 37px yellow,
+    390px 472px yellow, 2077px 1573px yellow, 2169px 2544px yellow,
+    971px 392px yellow, 464px 2092px yellow, 998px 226px yellow,
+    38px 2313px yellow, 898px 1267px yellow, 469px 576px yellow,
+    920px 1422px yellow, 293px 2018px yellow, 654px 2437px yellow,
+    1726px 1144px yellow, 2379px 1086px yellow, 598px 910px yellow,
+    854px 2246px yellow, 1368px 47px yellow, 1232px 1336px yellow,
+    760px 1079px yellow, 2216px 949px yellow, 1232px 1020px yellow,
+    1828px 971px yellow, 2284px 1014px yellow, 768px 1252px yellow,
+    631px 101px yellow, 1695px 1337px yellow, 342px 2137px yellow,
+    801px 714px yellow, 1717px 968px yellow, 1925px 722px yellow,
+    1171px 2458px yellow, 1872px 528px yellow, 2526px 1021px yellow,
+    1116px 1354px yellow, 2358px 958px yellow, 199px 1987px yellow,
+    1676px 1889px yellow, 1303px 193px yellow, 959px 1982px yellow,
+    1263px 1913px yellow, 1695px 297px yellow, 495px 1020px yellow,
+    2207px 64px yellow, 1719px 2526px yellow, 2125px 2156px yellow,
+    831px 371px yellow, 2481px 88px yellow, 2534px 1959px yellow,
+    149px 805px yellow, 181px 188px yellow, 2251px 642px yellow,
+    2216px 1937px yellow, 1783px 2236px yellow, 1227px 1600px yellow,
+    291px 2112px yellow, 2443px 573px yellow, 2307px 447px yellow,
+    2096px 1168px yellow, 2202px 560px yellow, 1566px 1862px yellow,
+    1523px 733px yellow, 1262px 337px yellow, 1165px 2396px yellow,
+    827px 2455px yellow, 1241px 1475px yellow, 631px 2240px yellow,
+    2129px 1418px yellow, 875px 1071px yellow, 1194px 1683px yellow,
+    1031px 1679px yellow, 1540px 1103px yellow, 1217px 191px yellow,
+    56px 1430px yellow, 2295px 2162px yellow, 806px 784px yellow,
+    99px 44px yellow, 2036px 1917px yellow, 851px 292px yellow,
+    311px 2552px yellow, 2144px 2537px yellow, 1558px 2325px yellow,
+    2170px 1924px yellow, 2400px 166px yellow, 1656px 2224px yellow,
+    1241px 1832px yellow, 328px 496px yellow, 1636px 2135px yellow,
+    1075px 1831px yellow, 2344px 550px yellow, 1872px 1176px yellow,
+    1245px 1508px yellow, 890px 1264px yellow, 1821px 1271px yellow,
+    2248px 534px yellow, 1430px 563px yellow, 235px 1195px yellow,
+    1938px 1533px yellow, 1936px 829px yellow, 412px 610px yellow,
+    1137px 505px yellow, 1771px 733px yellow, 702px 974px yellow,
+    2269px 1901px yellow, 2184px 506px yellow, 811px 2548px yellow,
+    104px 2066px yellow, 536px 2539px yellow, 2429px 1475px yellow,
+    70px 1224px yellow, 1238px 558px yellow, 1792px 1288px yellow,
+    1422px 2352px yellow, 1677px 1240px yellow, 2328px 112px yellow,
+    238px 984px yellow, 1023px 1792px yellow, 1727px 1777px yellow,
+    2349px 1251px yellow, 2111px 413px yellow, 1086px 1184px yellow,
+    1207px 54px yellow, 1766px 168px yellow, 644px 2328px yellow,
+    199px 2332px yellow, 1254px 2355px yellow, 274px 1789px yellow,
+    1518px 2496px yellow, 2491px 932px yellow, 436px 109px yellow,
+    1830px 1500px yellow, 1055px 1008px yellow, 378px 623px yellow,
+    2080px 2044px yellow, 260px 753px yellow, 2097px 1349px yellow,
+    2237px 197px yellow, 1834px 177px yellow, 2406px 791px yellow,
+    1723px 212px yellow, 916px 1407px yellow, 369px 2071px yellow,
+    734px 1914px yellow, 427px 1570px yellow, 196px 949px yellow,
+    192px 2404px yellow, 1101px 314px yellow, 1577px 2019px yellow,
+    774px 1939px yellow, 1656px 349px yellow, 109px 610px yellow,
+    528px 1799px yellow, 852px 726px yellow, 2416px 1988px yellow,
+    1034px 1162px yellow, 2119px 1063px yellow, 42px 715px yellow,
+    2194px 2495px yellow, 333px 774px yellow, 1176px 1382px yellow,
+    983px 2240px yellow, 31px 2498px yellow, 1516px 1556px yellow,
+    1908px 1475px yellow, 595px 1820px yellow, 210px 656px yellow,
+    547px 2451px yellow, 2228px 1029px yellow, 2513px 2250px yellow,
+    1583px 1582px yellow, 1844px 545px yellow, 1871px 418px yellow,
+    968px 2254px yellow, 466px 1154px yellow, 727px 2240px yellow,
+    720px 2005px yellow, 1968px 1398px yellow, 1111px 2009px yellow,
+    654px 2148px yellow, 1003px 1361px yellow, 1971px 1393px yellow,
+    2531px 2443px yellow, 912px 1604px yellow, 323px 1664px yellow,
+    2447px 933px yellow, 560px 2422px yellow, 2004px 194px yellow,
+    669px 995px yellow, 1199px 1685px yellow, 602px 43px yellow,
+    988px 1270px yellow, 535px 1029px yellow, 2371px 1127px yellow,
+    372px 1223px yellow, 2549px 2151px yellow, 484px 2279px yellow,
+    1346px 916px yellow, 375px 1444px yellow, 1262px 1391px yellow,
+    2158px 2478px yellow, 1254px 792px yellow, 867px 520px yellow,
+    2144px 2376px yellow, 1477px 1021px yellow, 2539px 1958px yellow,
+    2017px 702px yellow, 201px 1943px yellow, 1573px 776px yellow,
+    14px 2265px yellow, 2139px 1291px yellow, 621px 1641px yellow,
+    299px 2154px yellow, 433px 2250px yellow, 1037px 243px yellow,
+    2094px 801px yellow, 118px 990px yellow, 1843px 878px yellow,
+    2500px 1279px yellow, 2097px 2246px yellow, 2045px 70px yellow,
+    1274px 1480px yellow, 962px 674px yellow, 2497px 160px yellow,
+    2516px 278px yellow, 841px 2050px yellow, 1120px 944px yellow,
+    1638px 678px yellow, 2511px 1637px yellow, 1727px 1365px yellow,
+    2100px 1619px yellow, 506px 52px yellow, 442px 817px yellow,
+    1753px 2557px yellow, 1751px 2237px yellow, 2084px 707px yellow,
+    739px 2293px yellow, 2528px 294px yellow, 1805px 316px yellow,
+    477px 2105px yellow, 369px 2487px yellow, 1876px 826px yellow,
+    470px 1586px yellow, 158px 1472px yellow, 380px 2479px yellow,
+    1024px 1628px yellow, 585px 1707px yellow, 840px 1241px yellow,
+    2052px 963px yellow, 2390px 94px yellow, 660px 1875px yellow,
+    1020px 633px yellow, 409px 355px yellow, 1089px 1012px yellow,
+    583px 899px yellow, 388px 1072px yellow, 69px 1752px yellow,
+    1852px 1136px yellow, 721px 722px yellow, 1551px 2204px yellow,
+    111px 2475px yellow, 1070px 1954px yellow, 96px 2096px yellow,
+    466px 1253px yellow, 664px 360px yellow, 143px 1121px yellow,
+    1793px 1301px yellow, 647px 187px yellow, 2049px 2237px yellow,
+    596px 819px yellow, 1412px 2200px yellow, 272px 185px yellow,
+    1087px 2200px yellow, 1185px 342px yellow, 2317px 330px yellow,
+    19px 86px yellow, 909px 2226px yellow, 2083px 760px yellow,
+    2428px 1626px yellow, 2507px 913px yellow, 1718px 864px yellow,
+    1175px 402px yellow, 559px 131px yellow, 1839px 1285px yellow,
+    2346px 1739px yellow, 1798px 1369px yellow, 2268px 1537px yellow,
+    458px 614px yellow, 2383px 1267px yellow, 927px 2163px yellow,
+    1604px 2036px yellow, 260px 2543px yellow, 1953px 804px yellow,
+    1010px 940px yellow, 1126px 648px yellow, 2174px 1776px yellow,
+    1901px 1051px yellow, 1988px 298px yellow, 863px 1934px yellow,
+    799px 2337px yellow, 790px 1913px yellow, 2346px 728px yellow,
+    1392px 5px yellow, 1682px 401px yellow, 613px 1686px yellow,
+    1019px 1687px yellow, 81px 2125px yellow, 2475px 2015px yellow,
+    311px 2026px yellow, 1593px 2480px yellow, 716px 425px yellow,
+    1416px 1336px yellow, 2080px 2159px yellow, 1705px 1623px yellow,
+    183px 838px yellow, 1392px 1479px yellow, 2064px 2422px yellow,
+    2099px 231px yellow, 1308px 2185px yellow, 590px 570px yellow,
+    721px 2445px yellow, 666px 310px yellow, 1609px 2425px yellow,
+    1441px 1210px yellow, 1775px 2272px yellow, 17px 1774px yellow,
+    2511px 1116px yellow, 590px 2143px yellow, 1324px 1163px yellow,
+    81px 1626px yellow, 167px 183px yellow, 460px 154px yellow,
+    1929px 430px yellow, 1163px 1506px yellow, 728px 2305px yellow,
+    1326px 2446px yellow, 326px 2265px yellow, 2448px 2471px yellow,
+    1062px 1677px yellow, 807px 2062px yellow, 1607px 1126px yellow,
+    728px 790px yellow, 488px 2245px yellow, 1706px 641px yellow,
+    1702px 1882px yellow, 1089px 2437px yellow, 2150px 254px yellow,
+    557px 1550px yellow, 1883px 1975px yellow, 1427px 1389px yellow,
+    1707px 1879px yellow, 1373px 747px yellow, 1269px 1217px yellow,
+    217px 1863px yellow, 2268px 392px yellow, 942px 1534px yellow,
+    2038px 2289px yellow, 2032px 602px yellow, 1744px 760px yellow,
+    2261px 684px yellow, 1259px 1758px yellow, 1727px 2066px yellow,
+    599px 891px yellow, 611px 1947px yellow, 1494px 2054px yellow,
+    675px 10px yellow, 1593px 1689px yellow, 1327px 640px yellow,
+    2068px 1621px yellow, 705px 614px yellow, 1846px 1130px yellow,
+    125px 1257px yellow, 2502px 2472px yellow, 200px 1563px yellow,
+    1524px 641px yellow, 2351px 778px yellow, 1454px 2063px yellow,
+    990px 2274px yellow, 1912px 744px yellow, 2121px 726px yellow,
+    2100px 1575px yellow, 417px 1580px yellow, 1116px 614px yellow,
+    1788px 1726px yellow, 1296px 2088px yellow, 1523px 2091px yellow,
+    1252px 2447px yellow, 1864px 1559px yellow, 1471px 1072px yellow,
+    1778px 822px yellow, 1916px 534px yellow, 2010px 722px yellow,
+    1840px 869px yellow, 644px 1617px yellow, 2249px 2039px yellow,
+    2229px 1928px yellow, 1888px 420px yellow, 685px 933px yellow,
+    1107px 701px yellow, 1876px 1835px yellow, 721px 2532px yellow,
+    1935px 2244px yellow, 983px 1340px yellow, 39px 706px yellow,
+    2337px 97px yellow, 2552px 245px yellow, 1272px 2428px yellow,
+    179px 1828px yellow, 1913px 1568px yellow, 210px 47px yellow,
+    2293px 863px yellow, 254px 724px yellow, 1470px 1359px yellow,
+    332px 1491px yellow, 2311px 301px yellow, 1480px 2560px yellow,
+    251px 96px yellow, 1619px 2176px yellow, 2469px 1038px yellow,
+    1793px 2288px yellow, 284px 1904px yellow, 850px 841px yellow,
+    1688px 1752px yellow, 192px 919px yellow, 472px 480px yellow,
+    121px 107px yellow, 1653px 1482px yellow, 109px 2009px yellow,
+    74px 731px yellow, 315px 947px yellow, 64px 834px yellow,
+    957px 2170px yellow, 326px 2239px yellow, 95px 1971px yellow,
+    1174px 1616px yellow, 780px 152px yellow, 1588px 404px yellow,
+    68px 2540px yellow, 749px 78px yellow, 236px 2351px yellow,
+    477px 1650px yellow, 440px 822px yellow, 1205px 2141px yellow,
+    586px 403px yellow, 952px 90px yellow, 795px 1203px yellow,
+    2084px 999px yellow, 637px 1108px yellow, 1793px 33px yellow,
+    2340px 1486px yellow, 211px 2310px yellow, 2483px 2089px yellow,
+    2267px 1470px yellow, 438px 2247px yellow, 209px 1777px yellow,
+    2397px 2294px yellow, 2164px 100px yellow, 2px 2558px yellow,
+    79px 1504px yellow, 181px 1658px yellow, 1608px 2105px yellow,
+    765px 650px yellow, 2382px 2354px yellow, 1688px 2285px yellow,
+    1479px 155px yellow, 636px 2552px yellow, 618px 1633px yellow,
+    1930px 108px yellow, 566px 2165px yellow, 1961px 1007px yellow,
+    2497px 2245px yellow, 735px 1855px yellow, 2235px 2203px yellow,
+    1189px 1026px yellow, 467px 2363px yellow, 2079px 2464px yellow,
+    1699px 2156px yellow, 452px 318px yellow, 978px 1095px yellow,
+    2001px 148px yellow, 2474px 1317px yellow, 1983px 2216px yellow,
+    2060px 1258px yellow, 1359px 265px yellow, 2088px 1280px yellow,
+    2314px 1661px yellow, 1579px 21px yellow, 171px 1309px yellow,
+    294px 2236px yellow, 925px 1064px yellow, 2269px 1629px yellow,
+    11px 358px yellow, 808px 385px yellow, 1816px 128px yellow,
+    477px 309px yellow, 1993px 2126px yellow, 1256px 2095px yellow,
+    1395px 1265px yellow, 944px 2399px yellow, 2345px 2496px yellow,
+    1359px 1856px yellow, 1628px 1581px yellow, 1477px 777px yellow,
+    1562px 1422px yellow, 264px 693px yellow, 2244px 21px yellow,
+    1372px 854px yellow, 1615px 1537px yellow, 1504px 2371px yellow,
+    1465px 1518px yellow, 1315px 1782px yellow, 590px 996px yellow,
+    1911px 391px white;
+  width: 1px;
+  height: 1px;
+}
+.particle:nth-child(2) {
+  animation: particles 120s linear infinite;
+}
+.particle:nth-child(2),
+.particle:nth-child(2)::after {
+  box-shadow: 0 0 yellow, 1408px 312px yellow, 297px 1760px yellow,
+    601px 1087px yellow, 634px 240px yellow, 1746px 678px yellow,
+    1697px 37px yellow, 214px 902px yellow, 877px 39px yellow, 1569px 4px yellow,
+    401px 184px yellow, 1025px 1134px yellow, 1080px 1306px yellow,
+    499px 337px yellow, 1508px 2232px yellow, 2204px 1556px yellow,
+    586px 1879px yellow, 344px 863px yellow, 1204px 471px yellow,
+    673px 1248px yellow, 573px 1832px yellow, 1845px 259px yellow,
+    559px 1055px yellow, 1680px 902px yellow, 2311px 1833px yellow,
+    736px 1025px yellow, 1390px 1116px yellow, 2450px 1794px yellow,
+    1897px 2148px yellow, 770px 1959px yellow, 2023px 2365px yellow,
+    991px 1423px yellow, 1590px 585px yellow, 1854px 1021px yellow,
+    691px 2464px yellow, 552px 471px yellow, 418px 2471px yellow,
+    1623px 40px yellow, 662px 199px yellow, 1837px 635px yellow,
+    2016px 1020px yellow, 2142px 2041px yellow, 44px 868px yellow,
+    271px 656px yellow, 2248px 1267px yellow, 2027px 31px yellow,
+    204px 1675px yellow, 620px 147px yellow, 1894px 821px yellow,
+    2105px 1353px yellow, 2237px 1282px yellow, 375px 766px yellow,
+    379px 2135px yellow, 2321px 78px yellow, 91px 2160px yellow,
+    8px 909px yellow, 2547px 1557px yellow, 542px 1439px yellow,
+    2264px 50px yellow, 555px 521px yellow, 2071px 815px yellow,
+    2296px 221px yellow, 73px 2523px yellow, 2391px 213px yellow,
+    2290px 405px yellow, 1594px 1130px yellow, 141px 2397px yellow,
+    1402px 829px yellow, 2264px 238px yellow, 1401px 2455px yellow,
+    1390px 1994px yellow, 954px 620px yellow, 581px 1433px yellow,
+    857px 1481px yellow, 672px 2066px yellow, 423px 1928px yellow,
+    2244px 1606px yellow, 2297px 2053px yellow, 1195px 433px yellow,
+    1260px 257px yellow, 260px 56px yellow, 498px 548px yellow,
+    2142px 334px yellow, 2454px 7px yellow, 1312px 327px yellow,
+    1663px 214px yellow, 1239px 1430px yellow, 1118px 589px yellow,
+    682px 1513px yellow, 2264px 1314px yellow, 1342px 685px yellow,
+    1896px 1059px yellow, 79px 1580px yellow, 2027px 371px yellow,
+    1864px 2199px yellow, 854px 1791px yellow, 312px 1262px yellow,
+    1521px 1532px yellow, 308px 2540px yellow, 2433px 1124px yellow,
+    2291px 25px yellow, 740px 63px yellow, 2022px 2349px yellow,
+    2164px 393px yellow, 1911px 1363px yellow, 719px 434px yellow,
+    493px 288px yellow, 2442px 9px yellow, 134px 1429px yellow,
+    828px 2081px yellow, 1133px 1356px yellow, 249px 2361px yellow,
+    1839px 1029px yellow, 570px 1160px yellow, 325px 429px yellow,
+    2522px 225px yellow, 373px 1763px yellow, 541px 856px yellow,
+    189px 2319px yellow, 1035px 823px yellow, 65px 1417px yellow,
+    2520px 2410px yellow, 111px 323px yellow, 460px 1308px yellow,
+    2153px 495px yellow, 733px 87px yellow, 1523px 2059px yellow,
+    2465px 393px yellow, 2480px 2181px yellow, 2244px 1716px yellow,
+    454px 664px yellow, 1914px 1365px yellow, 1648px 1518px yellow,
+    966px 1235px yellow, 2053px 677px yellow, 1082px 1209px yellow,
+    1995px 1355px yellow, 1222px 781px yellow, 2463px 54px yellow,
+    607px 580px yellow, 1109px 1434px yellow, 1363px 1496px yellow,
+    1709px 423px yellow, 1655px 193px yellow, 692px 2461px yellow,
+    930px 28px yellow, 659px 1425px yellow, 1689px 299px yellow,
+    1134px 1220px yellow, 776px 2488px yellow, 1332px 927px yellow,
+    1809px 44px yellow, 208px 1681px yellow, 1812px 909px yellow,
+    202px 356px yellow, 294px 1502px yellow, 2155px 2437px yellow,
+    2137px 228px yellow, 92px 144px yellow, 253px 844px yellow,
+    2488px 82px yellow, 1704px 2512px yellow, 1047px 1459px yellow,
+    425px 1071px yellow, 2170px 2036px yellow, 13px 374px yellow,
+    288px 2127px yellow, 1914px 1622px yellow, 1980px 967px yellow,
+    1960px 2268px yellow, 2269px 1563px yellow, 2134px 767px yellow,
+    1817px 2369px yellow, 1458px 229px yellow, 1976px 654px yellow,
+    956px 537px yellow, 1342px 1321px yellow, 2251px 1093px yellow,
+    218px 2282px yellow, 1340px 1587px yellow, 173px 1701px yellow,
+    1449px 1377px yellow, 1350px 416px yellow, 1527px 1167px yellow,
+    1135px 784px yellow, 2006px 1526px yellow, 864px 2195px yellow,
+    2464px 2346px yellow, 913px 896px yellow, 1642px 626px yellow,
+    782px 367px yellow, 593px 2423px yellow, 1005px 1391px yellow,
+    2162px 1849px yellow, 1299px 1735px yellow, 2393px 74px yellow,
+    2472px 439px yellow, 946px 2430px yellow, 1432px 1628px yellow,
+    2010px 293px yellow, 1265px 136px white;
+  width: 2px;
+  height: 2px;
+}
+.particle:nth-child(3) {
+  animation: particles 180s linear infinite;
+}
+.particle:nth-child(3),
+.particle:nth-child(3)::after {
+  box-shadow: 0 0 yellow, 1950px 1915px yellow, 1695px 1684px yellow,
+    2549px 2211px yellow, 1567px 2334px yellow, 281px 1415px yellow,
+    432px 691px yellow, 1194px 676px yellow, 702px 1964px yellow,
+    44px 74px yellow, 1838px 289px yellow, 601px 1949px yellow,
+    1143px 72px yellow, 433px 529px yellow, 2480px 1098px yellow,
+    1190px 2387px yellow, 461px 515px yellow, 1282px 2055px yellow,
+    2107px 1097px yellow, 2271px 197px yellow, 525px 911px yellow,
+    1221px 1892px yellow, 1524px 1301px yellow, 1756px 1372px yellow,
+    1329px 1691px yellow, 2403px 346px yellow, 2078px 2155px yellow,
+    1034px 877px yellow, 336px 860px yellow, 287px 1930px yellow,
+    665px 346px yellow, 1406px 1827px yellow, 722px 601px yellow,
+    511px 1331px yellow, 645px 1626px yellow, 546px 1571px yellow,
+    13px 1430px yellow, 1963px 902px yellow, 1390px 2025px yellow,
+    939px 822px yellow, 2032px 1384px yellow, 2232px 2083px yellow,
+    1316px 1716px yellow, 2008px 803px yellow, 1994px 1929px yellow,
+    1651px 1624px yellow, 382px 1911px yellow, 162px 2560px yellow,
+    2010px 933px yellow, 1231px 2043px yellow, 1214px 346px yellow,
+    318px 2198px yellow, 1310px 312px yellow, 1232px 255px yellow,
+    1291px 1857px yellow, 1536px 1849px yellow, 743px 360px yellow,
+    994px 1004px yellow, 2334px 2389px yellow, 229px 273px yellow,
+    469px 2081px yellow, 287px 2417px yellow, 655px 1945px yellow,
+    1477px 809px yellow, 1520px 11px yellow, 1946px 672px yellow,
+    1556px 1986px yellow, 758px 1600px yellow, 377px 2366px yellow,
+    1896px 1352px yellow, 696px 2092px yellow, 2141px 2186px yellow,
+    2524px 365px yellow, 854px 1519px yellow, 1250px 2363px yellow,
+    1621px 2506px yellow, 1510px 228px yellow, 2383px 1892px yellow,
+    674px 1680px yellow, 1611px 1101px yellow, 685px 2173px yellow,
+    1510px 1272px yellow, 1896px 1004px yellow, 592px 672px yellow,
+    671px 52px yellow, 886px 1304px yellow, 1718px 95px yellow,
+    1806px 1008px yellow, 1307px 2310px yellow, 788px 362px yellow,
+    2111px 2122px yellow, 1383px 1051px yellow, 791px 668px yellow,
+    1738px 990px yellow, 1265px 700px yellow, 398px 627px yellow,
+    1893px 27px yellow, 2294px 1015px yellow, 1884px 2362px yellow,
+    2394px 853px yellow, 471px 1695px white;
+  width: 3px;
+  height: 3px;
+}
+.particle:nth-child(4) {
+  animation: particles 400s linear infinite;
+}
+.particle:nth-child(4),
+.particle:nth-child(4)::after {
+  box-shadow: 0 0 yellow, 2306px 1814px yellow, 2198px 2221px yellow,
+    318px 416px yellow, 1424px 2140px yellow, 1374px 148px yellow,
+    160px 2552px yellow, 2190px 195px yellow, 831px 378px yellow,
+    1657px 1385px yellow, 1071px 119px yellow, 2523px 1038px yellow,
+    822px 620px yellow, 693px 1173px yellow, 1787px 2323px yellow,
+    2173px 1572px yellow, 652px 1936px yellow, 1535px 1950px yellow,
+    13px 1123px yellow, 131px 902px yellow, 2391px 1668px yellow,
+    2072px 2272px yellow, 494px 1569px yellow, 1216px 367px yellow,
+    90px 2091px yellow, 87px 209px yellow, 474px 1276px yellow,
+    1175px 1510px yellow, 959px 1909px yellow, 176px 472px yellow,
+    2193px 449px yellow, 682px 2002px yellow, 1622px 1473px yellow,
+    1538px 2554px yellow, 1434px 1814px yellow, 1093px 2545px yellow,
+    2432px 2511px yellow, 208px 1655px yellow, 970px 1542px yellow,
+    51px 1252px yellow, 20px 1435px yellow, 1899px 841px yellow,
+    1029px 1467px yellow, 1608px 754px yellow, 1230px 2105px yellow,
+    856px 1716px yellow, 516px 1044px yellow, 1451px 146px yellow,
+    1227px 1459px yellow, 2541px 1087px yellow, 2369px 576px yellow,
+    1729px 2480px yellow, 1806px 1445px yellow, 2528px 268px yellow,
+    2442px 1866px yellow, 150px 858px yellow, 2489px 2298px yellow,
+    35px 551px yellow, 763px 1043px yellow, 2142px 1307px yellow,
+    811px 1100px yellow, 436px 681px yellow, 2291px 2018px yellow,
+    2241px 1456px yellow, 1308px 2538px yellow, 1932px 1619px yellow,
+    2536px 1940px yellow, 346px 1870px yellow, 1456px 197px yellow,
+    2400px 2235px yellow, 958px 1487px yellow, 575px 2457px yellow,
+    2326px 1034px yellow, 285px 990px yellow, 844px 2160px yellow,
+    2246px 2080px yellow, 42px 1826px yellow, 1675px 236px yellow,
+    1660px 701px yellow, 2238px 2298px yellow, 9px 1229px yellow,
+    2292px 1540px yellow, 1565px 1922px yellow, 774px 1623px yellow,
+    116px 2189px yellow, 332px 1720px yellow, 1853px 93px yellow,
+    946px 1409px yellow, 1150px 115px yellow, 1525px 2301px yellow,
+    525px 1428px yellow, 1371px 1852px yellow, 686px 352px yellow,
+    55px 555px yellow, 1218px 2290px yellow, 152px 1548px yellow,
+    1610px 649px yellow, 2012px 442px yellow, 2472px 804px yellow,
+    1224px 912px yellow, 2250px 1799px yellow, 1934px 36px yellow,
+    1468px 2055px yellow, 2159px 1989px yellow, 2506px 1825px yellow,
+    1104px 69px yellow, 1743px 89px yellow, 2150px 2179px yellow,
+    307px 2387px yellow, 1008px 2463px yellow, 1391px 1881px yellow,
+    371px 76px yellow, 671px 959px yellow, 1582px 1905px yellow,
+    479px 2150px yellow, 1047px 486px yellow, 774px 379px yellow,
+    1651px 832px yellow, 1880px 811px yellow, 1052px 1787px yellow,
+    1213px 1534px yellow, 2058px 174px yellow, 184px 291px yellow,
+    1243px 1457px yellow, 2515px 319px yellow, 2346px 755px yellow,
+    2099px 2438px yellow, 2009px 1586px yellow, 2057px 644px yellow,
+    1270px 1346px yellow, 1270px 2305px yellow, 1838px 1088px yellow,
+    733px 1083px yellow, 112px 141px yellow, 175px 1858px yellow,
+    478px 2342px yellow, 1711px 1594px yellow, 386px 997px yellow,
+    1011px 470px yellow, 2111px 1677px yellow, 2181px 603px yellow,
+    2478px 1593px yellow, 602px 1887px yellow, 1628px 342px yellow,
+    2013px 2120px yellow, 2163px 2097px yellow, 2084px 1479px yellow,
+    1599px 331px yellow, 2070px 1890px yellow, 205px 1107px yellow,
+    1080px 463px yellow, 1004px 1306px yellow, 453px 1603px yellow,
+    87px 2445px yellow, 1822px 671px yellow, 118px 2280px yellow,
+    2046px 216px yellow, 347px 1551px yellow, 2479px 1540px yellow,
+    1699px 504px yellow, 1538px 1752px yellow, 2028px 1272px yellow,
+    1140px 1204px yellow, 973px 1016px yellow, 1689px 2104px yellow,
+    1417px 144px yellow, 859px 2151px yellow, 294px 1434px yellow,
+    855px 672px yellow, 3px 2303px yellow, 397px 1582px yellow,
+    1292px 1115px yellow, 2488px 1356px yellow, 1229px 643px yellow,
+    595px 2528px yellow, 995px 617px yellow, 990px 339px yellow,
+    2113px 585px yellow, 1649px 111px yellow, 1343px 1969px yellow,
+    573px 337px yellow, 2386px 564px yellow, 2005px 1502px yellow,
+    905px 1835px yellow, 2189px 1420px yellow, 1902px 2529px yellow,
+    1685px 1220px yellow, 976px 2541px yellow, 1495px 644px yellow,
+    1869px 1950px yellow, 2310px 1699px yellow, 206px 1411px yellow,
+    816px 1432px yellow, 408px 2499px yellow, 1659px 256px yellow,
+    1477px 986px yellow, 280px 672px yellow, 1194px 1375px yellow,
+    1201px 2019px yellow, 965px 1100px yellow, 995px 889px yellow,
+    948px 2180px yellow, 478px 1533px yellow, 1771px 48px yellow,
+    2113px 1880px yellow, 335px 2322px yellow, 1681px 2180px yellow,
+    1134px 1980px yellow, 2177px 936px yellow, 906px 1030px yellow,
+    950px 511px yellow, 832px 537px yellow, 1565px 1719px yellow,
+    2193px 1708px yellow, 1344px 1774px yellow, 1566px 209px yellow,
+    635px 600px yellow, 793px 548px yellow, 1313px 1331px yellow,
+    2401px 1016px yellow, 56px 1562px yellow, 1182px 1782px yellow,
+    2539px 513px yellow, 1732px 83px yellow, 1734px 2471px yellow,
+    1569px 2156px yellow, 1424px 258px yellow, 1828px 243px yellow,
+    2312px 2524px yellow, 1811px 582px yellow, 2279px 1950px yellow,
+    1303px 2473px yellow, 1167px 1768px yellow, 1784px 1204px yellow,
+    2177px 417px yellow, 154px 364px yellow, 1520px 310px yellow,
+    2064px 1141px yellow, 2223px 1277px yellow, 2394px 2112px yellow,
+    1646px 507px yellow, 2432px 1314px yellow, 969px 410px yellow,
+    508px 2040px yellow, 498px 2159px yellow, 1120px 2191px yellow,
+    1291px 63px yellow, 1346px 118px yellow, 2358px 2012px yellow,
+    1743px 2292px yellow, 1034px 170px yellow, 1261px 83px yellow,
+    2070px 289px yellow, 2224px 382px yellow, 2177px 1874px yellow,
+    1355px 212px yellow, 1482px 598px yellow, 873px 2479px yellow,
+    1427px 1331px yellow, 2312px 1451px yellow, 1465px 2396px yellow,
+    1963px 78px yellow, 340px 908px yellow, 1959px 1746px yellow,
+    819px 471px yellow, 2421px 1928px yellow, 1708px 2399px yellow,
+    779px 171px yellow, 1566px 1089px yellow, 2186px 906px yellow,
+    5px 1062px yellow, 1150px 602px yellow, 399px 2480px yellow,
+    1243px 2281px yellow, 865px 539px yellow, 1284px 1945px yellow,
+    433px 275px yellow, 655px 2137px yellow, 574px 1856px yellow,
+    752px 1359px yellow, 1901px 247px yellow, 1363px 555px yellow,
+    1px 2124px yellow, 1961px 597px yellow, 1049px 1660px yellow,
+    709px 533px yellow, 1632px 1877px yellow, 2377px 1109px yellow,
+    1654px 1261px yellow, 659px 1072px yellow, 980px 471px yellow,
+    2527px 1278px yellow, 230px 1272px yellow, 513px 1844px yellow,
+    1943px 793px yellow, 1629px 1699px yellow, 2509px 1537px yellow,
+    2450px 800px yellow, 2217px 2165px yellow, 718px 1828px yellow,
+    811px 2114px yellow, 2047px 2378px yellow, 413px 1962px yellow,
+    1138px 1355px yellow, 1571px 2337px yellow, 1568px 1485px yellow,
+    353px 2369px yellow, 365px 1533px yellow, 126px 1680px yellow,
+    802px 2557px yellow, 1674px 382px yellow, 1855px 2128px yellow,
+    847px 1800px yellow, 2028px 1910px yellow, 1909px 789px yellow,
+    1639px 1521px yellow, 1943px 429px yellow, 2374px 517px yellow,
+    1203px 2036px yellow, 1290px 2361px yellow, 1639px 1095px yellow,
+    1167px 1043px yellow, 1618px 2028px yellow, 423px 530px yellow,
+    2500px 1939px yellow, 1832px 1100px yellow, 318px 2493px yellow,
+    1764px 2460px yellow, 2495px 1439px yellow, 518px 1961px yellow,
+    199px 2174px yellow, 1295px 964px yellow, 1055px 2406px yellow,
+    1173px 1721px yellow, 2428px 337px yellow, 1218px 1075px yellow,
+    107px 893px yellow, 457px 213px yellow, 1766px 97px yellow,
+    2040px 1661px yellow, 1171px 433px yellow, 1819px 2120px yellow,
+    1586px 2168px yellow, 584px 2135px yellow, 215px 1094px yellow,
+    147px 1557px yellow, 1039px 395px yellow, 1949px 247px yellow,
+    653px 1879px yellow, 2436px 1651px yellow, 126px 1659px yellow,
+    1337px 2533px yellow, 1864px 463px yellow, 1372px 2500px yellow,
+    2036px 754px yellow, 2252px 538px yellow, 2379px 2210px yellow,
+    1646px 1996px yellow, 1288px 1406px yellow, 702px 1186px yellow,
+    2552px 1697px yellow, 2198px 1014px yellow, 1019px 2062px yellow,
+    1138px 1407px yellow, 277px 1259px yellow, 1859px 827px yellow,
+    620px 1285px yellow, 2063px 269px yellow, 2375px 915px yellow,
+    1463px 1355px yellow, 2122px 262px yellow, 2403px 1955px yellow,
+    1981px 2226px yellow, 1388px 428px yellow, 987px 2215px yellow,
+    919px 2072px yellow, 604px 2094px yellow, 145px 1582px yellow,
+    1500px 2440px yellow, 511px 1159px yellow, 1119px 173px yellow,
+    766px 1617px yellow, 666px 2166px yellow, 1583px 1371px yellow,
+    1809px 1943px yellow, 589px 1547px yellow, 724px 259px yellow,
+    1282px 1525px yellow, 1229px 626px yellow, 350px 2300px yellow,
+    757px 47px yellow, 1426px 114px yellow, 749px 499px yellow,
+    952px 1522px yellow, 1299px 2072px yellow, 1686px 1088px yellow,
+    2195px 1616px yellow, 1219px 2007px yellow, 165px 2235px yellow,
+    2135px 2259px yellow, 359px 1520px white;
+  width: 2px;
+  height: 2px;
+}
