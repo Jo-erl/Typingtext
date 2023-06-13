@@ -1,5 +1,5 @@
 <h1>Typing Text Effect</h1>
-The Typing Text Effect is a JavaScript library that creates a captivating typing animation where text is automatically displayed as if being typed on loop. This GitHub repository provides a convenient solution for integrating the Typing Text Effect into your web projects, allowing you to engage your users with dynamic and eye-catching text animations.<br><br>
+The Typing Text Effect creates a captivating typing animation where text is automatically displayed as if being typed on loop. This GitHub repository provides a convenient solution for integrating the Typing Text Effect into your web projects, allowing you to engage your users with dynamic and eye-catching text animations.<br><br>
 
 <a href="https://jo-erl.github.io/Typingtext">Demo Link</a>
 
